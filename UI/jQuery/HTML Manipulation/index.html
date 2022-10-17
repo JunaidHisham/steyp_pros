@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Manipulation</title>
+        <style>
+            div.box {
+                width: 250px;
+                height: 250px;
+                padding: 20px;
+                margin: 20px;
+                border: 10px dotted #000;
+                background: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="first">
+            <h1><span>Hello World</span></h1>
+            <input type="text" name="newinput" placeholder="Name" />
+        </div>
+
+        <div id="second">
+            <h1>text will update here</h1>
+            <button>Update</button>
+            <h2></h2>
+        </div>
+
+        <div id="third">
+            <a href="https://www.talrop.com">Talrop</a>
+            <button>Set Attribute</button>
+        </div>
+        
+        <div id="fourth">
+            <h1>Hello World</h1>
+            <h2>Hey</h2>
+            <button>I will remove you</button>
+        </div>
+
+        <div id="fifth">
+            <h1 data-number="12">Hey </h1>
+            <button>click here</button>
+        </div>
+
+        <div id="sixth">
+            <h1 class="hii">Hello World</h1>
+            <button>Click</button>
+        </div>
+        <div id="seventh">
+            <h1>Hello World</h1>
+            <button>Change BG</button>
+        </div>
+
+        <div class="box">
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/getContent.js"></script>
+    </body>
+</html>

@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+body {
+  font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #1c2c40;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 400;
+}
+
+input,
+textarea,
+select {
+  font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+a {
+  color: #1c2c40;
+}
+
+a:hover,
+.submit:hover {
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
+  opacity: 0.85;
+}
+
+.thumb {
+  display: block;
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  line-height: 1.6em;
+  font-size: 23px;
+  font-family: "Circular-Std-Regular", Arial;
+  font-weight: 400;
+}
+
+.hidden {
+  display: none;
+}
+
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+@font-face {
+  font-family: "Circular-Std-Regular";
+  src: url("../fonts/CircularStd-Regular.woff2") format("woff2");
+  src: url("../fonts/CircularStd-Regular.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular-Std-Bold";
+  src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+  src: url("../fonts/CircularStd-Bold.woff") format("woff");
+  font-style: normal;
+}
+
+::-webkit-input-placeholder {
+  color: #d3cfcb;
+}
+
+:-ms-input-placeholder {
+  color: #d3cfcb;
+}
+
+::-ms-input-placeholder {
+  color: #d3cfcb;
+}
+
+::placeholder {
+  color: #d3cfcb;
+}
+
+#home {
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#home section.wrapper header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 95px;
+}
+
+#home section.wrapper header div.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home section.wrapper header div.left h1 {
+  width: 90px;
+  margin-right: 50px;
+}
+
+#home section.wrapper header div.left h1 a {
+  width: 100%;
+  display: block;
+}
+
+#home section.wrapper header div.left h1 a img {
+  width: 100%;
+  display: block;
+}
+
+#home section.wrapper header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home section.wrapper header ul li {
+  margin-right: 40px;
+}
+
+#home section.wrapper header ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 15px;
+}
+
+#home section.wrapper header ul li a img {
+  width: 14px;
+  margin-left: 10px;
+}
+
+#home section.wrapper header ul li a.button {
+  padding: 15px 30px;
+  border-radius: 4px;
+  background: #2dca73;
+}
+
+#home section.wrapper header ul li:last-child {
+  margin-right: 0;
+}
+
+#home section.wrapper #spotlight {
+  padding: 260px 0;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#home section.wrapper #spotlight h1 {
+  font-size: 55px;
+  text-transform: capitalize;
+  font-family: "Circular-Std-Bold";
+}
+
+#home section.wrapper #spotlight p {
+  font-size: 24px;
+  margin: 25px 0 60px;
+}
+
+#home section.wrapper #spotlight form {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#home section.wrapper #spotlight form input[type=text] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 12px 20px;
+  border-radius: 4px;
+  border: 1px solid #2dca73;
+}
+
+#home section.wrapper #spotlight form input[type=submit] {
+  padding: 12px 35px;
+  border-radius: 4px;
+  background: #2dca73;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 15px;
+}
+/*# sourceMappingURL=style.css.map */

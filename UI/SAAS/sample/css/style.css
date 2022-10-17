@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+h2 {
+  color: #84bd29;
+}
+
+h3 {
+  color: #84bd29;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+ul li {
+  margin-right: 40px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: red;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: #84bd29;
+}
+
+ul li a::after {
+  content: "hey";
+  margin-left: 30px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-size: 35px;
+  background: red;
+  color: #000;
+}
+
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-size: 35px;
+  background: blue;
+  color: #fff;
+}
+
+.basic, .success, .danger {
+  margin: 20px;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.success {
+  background: green;
+}
+
+.danger {
+  background: red;
+}
+/*# sourceMappingURL=style.css.map */

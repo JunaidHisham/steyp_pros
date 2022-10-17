@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#users { 
+margin-top: 100px;
+}
+#users .wrapper { 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#users .left_container {
+
+}
+#users .left_container h1 { 
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#users .left_container ul { 
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#users .left_container ul li { 
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#users .left_container ul li:last-child {
+    margin-bottom: 0;
+} 
+#users .left_container ul li .left { 
+    width: 20%;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+#users .left_container ul li .left img { 
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+#users .left_container ul li .right { 
+
+}
+
+#users .left_container ul li .right h2 { 
+}
+
+#users .left_container ul li .right a { 
+    text-decoration: none;
+}
+
+#users .right {}
+#users .right h2 {
+    margin-bottom: 20px;
+}
+#users .right form {}
+#users .right form .input_field {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#users .right form .input_field label {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+#users .right form .input_field input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    border: 1px solid #ddd1d1;
+    border-radius: 4px;
+}
+#users .right form .input_field input:focus {
+    border-color: yellow;
+}

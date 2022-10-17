@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+@font-face {
+    font-family: 'antonioregular';
+    src: url('../fonts/antonio-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/antonio-variablefont_wght-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'antoniobold';
+    src: url('../fonts/antonio-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/antonio-variablefont_wght-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+* {
+    margin: 50px;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 50px;
+    font-family: 'antoniobold' ;
+    font-weight: 700;
+}
+

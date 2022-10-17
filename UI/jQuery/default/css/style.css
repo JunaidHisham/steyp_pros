@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "product_sansregular";
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+	background: #000;
+}
+input,textarea,select{
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family:  Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+.wrapper {
+	width: 85%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+@font-face {
+    font-family: 'product_sansbold';
+    src: url('../fonts/product_sans_bold-webfont.woff2') format('woff2'),
+         url('../fonts/product_sans_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'product_sansregular';
+    src: url('../fonts/product_sans_regular-webfont.woff2') format('woff2'),
+         url('../fonts/product_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#slider {
+	background: #3da5e4;
+	margin: 150px 0;
+}
+#slider .wrapper {}
+#slider .slide {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#slider .slide .item {
+	background: #fff;
+	width: 31%;
+	margin: 100px 10px;
+	border-radius: 10px;
+}
+#slider .slide .item .top {
+	text-align: center;
+	padding: 50px 50px 0;
+}
+#slider .slide .item .top div.img-container {
+	width: 40%;
+	margin: 0 auto 20px;
+}
+#slider .slide .item .top div.img-container img {
+	display: block;
+	width: 100%;
+}
+#slider .slide .item .top p {
+	font-size: 21px;
+	color: #9da5a8;
+	font-family: "product_sansregular";
+}
+#slider .slide .item .top p span {
+	color: #808589;
+    font-family: 'product_sansbold';
+	font-weight: 700;
+}
+
+#slider .slide .item .bottom {
+	text-align: center;
+	padding: 50px;
+}
+#slider .slide .item .bottom div.img_contnt {
+	width: 90px;
+	margin: 0 auto 20px;
+}
+#slider .slide .item .bottom div.img_contnt img {
+	display: block;
+	width: 100%;
+}
+#slider .slide .item .bottom h2 {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+#slider .slide .item .bottom h6 {
+	font-size: 15px;
+}
+#slider .dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+#slider .dots ul {
+	display: flex;
+}
+#slider .dots ul li {
+	margin-right: 10px;
+}
+#slider .dots ul li:last-child {
+	margin: 0;
+}
+#slider .dots ul li img {}
+
+ul.slick-dots li {
+	background: url(../images/Assets/Ellipse\ 21.svg) no-repeat ;
+	width: 20px;
+	height: 20px;
+	list-style: none;
+}
+ul.slick-dots li.slick-active {
+	background: url(../images/Assets/Ellipse\ -1.svg) no-repeat ;
+	width: 20px;
+	height: 20px;
+}
+ul.slick-dots li.slick-active button::before {
+    opacity: 0;
+    color: white;
+}
+ul.slick-dots li button::before {
+	opacity: 0;
+}

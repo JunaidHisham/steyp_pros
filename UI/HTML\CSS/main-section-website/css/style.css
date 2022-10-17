@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #282A39;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #282A39;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1100px;
+}
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Circular-Std-Bold';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal
+}
+
+#main {
+	background: #fff2fd;
+	display: flex;
+	height: 120vh;
+	
+}
+#main .wrapper {
+	position: relative;
+}
+#main h2 {
+	font-size: 45px;
+	padding: 100px 0 0;
+	max-width: 500px;
+	font-weight: 500;
+}
+#main ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#main ul li {
+	font-family: 'Circular-Std-Regular';
+	width: 30%;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #c8c8c8;
+}
+#main ul li:first-child {
+	position: absolute;
+	top: 430px;
+	right: 20px;
+	left: 0;
+}
+#main ul li:nth-child(2) {
+	position: absolute;
+	top: 250px;
+	right: 20px;
+	left: 410px;
+}
+#main ul li:last-child {
+	position: absolute;
+	top: 100px;
+	right: 20px;
+	left: 830px;
+}
+#main ul li img {
+	display: block;
+	margin: 0 auto;
+	height: 200px;
+}
+#main ul li h4 {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+#main ul li p {
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+

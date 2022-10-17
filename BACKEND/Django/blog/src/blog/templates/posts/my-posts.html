@@ -1,0 +1,59 @@
+{% extends 'base.html' %} {% load static %} {% block content %} {% load paginator_tags %}
+<section id="my-posts-home">
+    <section class="wrapper">
+        {% include 'web/includes/header.html' %}
+        <section class="spotlight">
+            <h3>{{title}}</h3>
+            <ul class="posts">
+                {% for my_post in instances %}
+                <li class="post">
+                    <div class="top">
+                        <h5 class="title">{{my_post.title}}</h5>
+                        <div class="buttons">
+                            <a 
+                                href="{% url 'posts:delete_post' id=my_post.id %}" 
+                                class="danger action-button reload" 
+                                data-text="Are you sure want to remove this post. You can't undo this action." 
+                                data-title="Confirm Delete!" title="Delete!"
+
+                            >
+                                <img src="{% static './images/icons/delete.svg' %}" alt="Delete" />
+                            </a>
+                            <a href="{% url 'posts:edit_post' id=my_post.id %}" class="warning">
+                                <img src="{% static './images/icons/pencil.svg' %}" alt="Edit" />
+                            </a>
+                            <a 
+                                href="{% url 'posts:draft_post' id=my_post.id %}" 
+                                class="
+                                {% if my_post.is_draft %}
+                                    success 
+                                {% else %}
+                                    danger
+                                {% endif %}
+                                    action-button reload" 
+                                data-text="Are you sure want to update this post" 
+                                data-title="Confirm Status!" 
+                                title="Draft"
+                            >
+                                <img src="{% static './images/icons/sheet.svg' %}" alt="Edit" />
+                            </a>
+                        </div>
+                    </div>
+                    <p class="description">{{my_post.description|safe | truncatewords:20}}</p>
+                    <div class="bottom">
+                        <a href="{% url 'web:post' id=my_post.id %}" class="view">
+                            View
+                            <span>
+                                <img src="{% static './images/icons/up-arrow.svg' %}" alt="Arrow" />
+                            </span>
+                        </a>
+                        <p class="date">{{my_post.published_date}}</p>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% load_pagination instances %}
+    </section>
+</section>
+{% endblock %}

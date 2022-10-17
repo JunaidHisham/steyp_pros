@@ -1,0 +1,642 @@
+* {
+    padding: 0;
+    margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	/* max-width:1040px; */
+}
+:root {
+	--main-bg-color: #75cb73;
+}
+header {
+	height: 100px;
+	border-top: 5px solid var(--main-bg-color);
+}
+header .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center ;
+}
+header .left {
+	display: flex;
+	flex-wrap: wrap;
+}
+header .left div.logo {
+	width: 130px; 
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+}
+header .left div.logo h1 {
+	font-size: 20px;
+}
+header .left nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: center;
+}
+header .left nav ul li {
+	width: 100px;
+	padding: 38px 0;
+	text-align: center;
+}
+header .left nav ul li:first-child {
+	background: var(--main-bg-color);
+	color: #fff;
+}
+header .left nav ul li a {
+	text-decoration: none;
+	color: #000;
+}
+header .left nav ul li a.nav-home {
+	color: #fff;
+}
+header .right span.icon {
+	margin-right: 10px;
+	background: var(--main-bg-color);
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 50%;
+}
+header .right span.icon .phone-icon {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+}
+header .right a {
+	color: #000;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 400;
+}
+#spotlight {
+	background: url('../images/slider-image1.jpg');
+	background-size: cover ;
+	background-repeat: no-repeat;
+	background-position: center ;
+}
+#spotlight div.content {
+	color: #fff;
+	padding: 250px 0;
+	max-width: 600px;
+}
+#spotlight div.content h1 {
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+#spotlight div.content p {
+	font-size: 18px;
+	line-height: 1.5em;
+	margin-bottom: 30px;
+}
+#spotlight div.content a.button {
+	display: inline-block;
+	padding: 22px 33px;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#about .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#about div.card {
+	margin: 100px 0;
+	width: 31%;
+	border: 2px solid #f2f2f2;
+	padding: 80px 50px;
+	font-size: 20px;
+}
+#about div.card span.round-icon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #2646fc;
+	color: #fff;
+	border-radius: 25px;
+	padding: 15px;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+#about div.card h3 {
+	font-weight: 700;
+	font-size: 1em;
+	margin-bottom: 20px;
+}
+#about div.card p {
+	font-size: 0.8em;
+	line-height: 1.5em;
+	color: #afb0b3;
+	width: 85%;
+}
+
+#sign-up .content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 80px 0;
+}
+#sign-up div.left {
+	width: 50%;
+	padding: 20px ;
+}
+#sign-up div.left h3 {
+	font-size: 30px;
+	width: 70%;
+	margin-bottom: 20px;
+}
+#sign-up div.left ul {
+	list-style: none;
+}
+#sign-up div.left ul li {
+	position: relative;
+	margin-top: 80px;
+	font-size: 20px;
+}
+#sign-up div.left ul li span.round-icon {
+	width: 60px;
+	height: 60px;
+	background: var(--main-bg-color);
+	color: #fff;
+	font-size: 22px;
+	position: absolute;
+	display: inline-block;
+	border-radius: 50%;
+}
+#sign-up div.left ul li span.round-icon .fas {
+	padding-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+#sign-up div.left ul li h3 {
+	font-size: 20px;
+	left: 50px;
+	margin-left: 70px;
+	margin-bottom: 5px;
+}
+#sign-up div.left ul li p {
+	margin-left: 70px;
+	width: 80%;
+	line-height: 20px;
+	color: #bdbdbd;
+	font-size: 14px;
+}
+#sign-up div.right {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+#sign-up div.right form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	/* height: 100%; */
+	width: 60%;
+	background: #000;
+	text-align: center;
+	border-radius: 50%;
+}
+#sign-up div.right form h3 {
+	font-size: 24px;
+	color: #fff;
+	margin:90px 0 20px 0;
+}
+#sign-up div.right form input {
+	width: 55%;
+	height: 50px;
+	background: transparent;
+	border:0 ;
+	border-bottom:1px solid #bdbdbd ;
+	color: #fff;
+	font-size: 18px;
+}
+#sign-up div.right form button {
+	padding: 15px 30px;
+	margin: 20px 0 0;
+	background: #fff;
+	border: 0;
+	border-radius: 30px;
+	font-size: 16px;
+	margin-bottom: 90px;
+}
+
+#teachers {
+	background: #f1f0f0;
+	padding: 80px 0;
+}
+#teachers div.heading {
+	text-align: center;
+}
+#teachers div.heading h3 {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#teachers div.heading span {
+	display: inline-block;
+	margin-bottom: 50px;
+	font-size: 18px;
+}
+#teachers ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#teachers ul li {
+	width: 21%;
+	background: #fff;
+}
+#teachers ul li div.top {
+	width:100% ;
+}
+#teachers ul li div.top img {
+	width: 100%;
+}
+#teachers ul li div.bottom h2 {
+	margin: 15px 0 0 30px;
+}
+#teachers ul li div.bottom small {
+	display: inline-block;
+	margin: 0 0 10px 30px;
+}
+#teachers ul li div.bottom ul {
+	margin-left: 30px;
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+}
+#teachers ul li div.bottom ul li {
+	width: 40px;
+	margin-right: 0;
+}
+#teachers ul li div.bottom ul li a {
+	color: #000;
+}
+#teachers ul li div.bottom ul .fab,.far {
+	font-size: 16px;
+}
+
+#contact {
+	background-color: #3f51b5;
+}
+#contact section.content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 100px 0;
+}
+#contact section.content div.left {
+	width: 50%;
+	padding: 30px 0 0 30px;
+}
+#contact section.content div.left form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 90%;
+}
+#contact section.content div.left form h3 {
+	font-size: 30px;
+	color: #fff;
+}
+#contact section.content div.left form small {
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 25px;
+}
+#contact section.content div.left form input {
+	height: 50px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 0;
+}
+#contact section.content div.left form textarea {
+	border-radius: 5px;
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+#contact section.content div.left form button {
+	display: inline-block;
+	width: 150px;
+	padding: 18px 15px;
+	border: 0;
+	border-radius: 30px;
+}
+#contact section.content div.right {
+	width: 50%;
+}
+#contact section.content div.right div.container {
+	width: 80%;
+}
+#contact section.content div.right div.container img {
+	width: 100%;
+}
+
+footer {
+	background-color: #252020;
+}
+footer .wrapper section.content {
+	padding: 100px 0;
+}
+footer .wrapper section.content ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	color: #fff;
+}
+footer .wrapper section.content ul li {
+	width: 30%;
+}
+footer .wrapper section.content ul li h4 {
+	margin-bottom: 20px;
+}
+footer .wrapper section.content ul li p {
+	color: #bdbdbd;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+footer .wrapper section.content ul p:nth-child(3) {
+	margin-bottom: 50px;
+}
+footer .wrapper section.content ul li span a {
+	color: var(--main-bg-color);
+	display: inline-block;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+footer .wrapper section.content ul li span a :last-child {
+	margin-right: 0;
+}
+footer .wrapper section.content ul li form input {
+	background-color: transparent;
+	height: 50px;
+	width: 80%;
+	border: 0;
+	border-bottom: 1px solid #464545;
+}
+footer .wrapper section.content ul li form button {
+	display: inline-block;
+	padding: 15px 45px;
+	background: transparent;
+	border: 2px solid #bdbdbd;
+	color: #fff;
+	border-radius: 30px;
+	margin: 20px;
+}
+@media all and (max-width:1280px) {
+	#sign-up div.right {
+		width: 50%;
+	}
+	#sign-up div.right form {
+		width: 90%;
+		height: 90%;
+	}
+} 
+@media all and (max-width: 980px){
+	header .left nav ul li {
+		width: 90px;
+		font-size: 15px;
+	}
+	header .right a {
+		font-size: 15px;
+	}
+	#about div.card {
+		padding: 50px 30px ;
+	}
+	#sign-up div.left {
+		width: 100%;
+	}
+	#sign-up div.right {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+	#sign-up div.right form {
+		width: 500px;
+		height: 500px ;
+	}
+	#sign-up div.right form h3,#sign-up div.right form button {
+		margin: 0;
+	}
+	#sign-up div.left ul li:last-child {
+		margin-bottom: 30px;
+	}
+	#teachers ul li {
+		width: 45%;
+		margin-bottom: 50px;
+	}
+	#teachers ul li div.bottom ul li {
+		margin-bottom: 0;
+	}
+	#contact section.content {
+		padding: 60px 0;
+	}
+	#contact section.content div.left {
+		width: 100%;
+	}
+	#contact section.content div.right {
+		width: 90%;
+		padding: 50px;
+	}
+	#contact section.content div.left form button {
+		width: 100%;
+	}
+	#contact section.content div.right div.container {
+		width: 100%;
+	}
+	footer .wrapper section.content ul li {
+		margin-bottom: 40px;
+		width: 47%;
+	}
+	footer .wrapper section.content ul li:last-child {
+		width: 100%;
+		margin-bottom: 0;
+	}
+	footer .wrapper section.content ul li form button {
+		padding: 12px 100px;
+		font-size: 15px;
+	}
+	#contact section.content div.right {
+		width: 85%;
+		margin-left: 40px;
+		padding: 0;
+		padding-top: 40px;
+	}
+}
+@media all and (max-width: 768px){
+	header {
+		height: 80px;
+	}
+	header .left div.logo {
+		width: 90px;
+		height: 75px;
+	}
+	header .left nav ul li:first-child {
+		height: 75px;
+	}
+	header .left nav ul li {
+		padding: 20px;
+		font-size: 12px;
+		width: 80px;
+	}
+	header .right a {
+		font-size: 13px;
+	}
+	header .right span.icon {
+		width: 35px;
+		height: 35px;
+		margin: 0;
+	}
+	header .wrapper {
+		width: 95%;
+	}
+	#about div.card {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		padding: 30px 25px;
+	}
+	#sign-up div.left h3 {
+		width: 100%;
+	}
+	#contact section.content div.right div.container {
+		width: 100%;
+	}
+	#contact section.content div.right div.container img {
+		width: 100%;
+	}
+}
+@media all and (max-width: 640px){
+	header .left nav ul li,header .right {
+		display: none ;
+	}
+	#spotlight div.content h1 {
+		font-size: 30px;
+		width: 100%;
+	}
+	#spotlight div.content p {
+		font-size: 16px;
+	}
+	#spotlight div.content a.button {
+		padding: 15px 30px;
+	}
+	#about div.card {
+		width: 100%;
+		margin: 0;
+		margin-top: 40px;
+		padding: 50px 30px;
+	}
+	#teachers ul li {
+		width: 100%;
+	}
+	footer .wrapper section.content ul li {
+		width: 100%;
+	}
+	#contact section.content {
+		padding: 60px 0;
+	}
+	#contact section.content div.right {
+		padding: 30px 0;
+	}
+	#contact section.content div.right div.container {
+		width: 100%;
+		padding: 0;
+	}
+}
+@media all and (max-width: 360px){
+	#spotlight {
+		background-position: -535px 100px ;
+	}
+	#spotlight div.content {
+		padding: 200px 0 ;
+		margin-top: -75px;
+	}
+	#sign-up div.right form {
+		width: 330px;
+		height: 330px;
+	}
+	#sign-up div.right form h3 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	#sign-up div.right form input {
+		height: 40px;
+	}
+	#sign-up div.right form button {
+		padding: 10px 30px;
+	}
+	#teachers ul li:last-child {
+		margin-bottom: 0;
+	}
+	#contact section.content {
+		padding: 0;
+	}
+	#about div.card {
+		padding: 20px;
+	}
+	footer .wrapper section.content {
+		padding: 50px 0;
+	}
+
+}
+@media all and (max-width: 320px){
+	#spotlight div.content h1 {
+		font-size: 25px;
+	}
+	#spotlight div.content a.button {
+		padding: 10px 30px;
+	}
+	#sign-up div.left h3 {
+		font-size: 24px;
+	}
+	#sign-up div.left ul li span.round-icon {
+		width: 40px;
+		height: 40px;
+	}
+	#sign-up div.left ul li span.round-icon .fas{
+		margin-top: -10px;
+	}
+	#sign-up div.left ul li h3,#sign-up div.left ul li p {
+		margin-left: 50px;
+	}
+	#sign-up div.right form {
+		width: 300px;
+		height: 300px;
+	}
+	#sign-up div.right form h3 {
+		font-size: 18px;
+	}
+	#sign-up div.right form input {
+		height: 30px;
+	}
+	#contact section.content div.left form h3,#contact section.content div.left form small,#contact section.content div.left form textarea,#contact section.content div.left form input {
+		width: 265px;
+	}
+	footer .wrapper section.content ul li form button {
+		padding:15px 50px;
+	}
+}

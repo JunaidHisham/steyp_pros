@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.outer-box {
+    background-color: rgb(53, 52, 52);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+div.login-box {
+    width: 400px;
+    background-color: #000;
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 200px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+div.heading-column {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background-color: rgb(6, 135, 158);
+}
+div.heading-column h2 {
+    font-size: 20px;
+}
+div.form-box {
+    padding: 30px 20px ;
+}
+div.form-box form {}
+div.form-box form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+div.form-box form div:last-child {
+    margin-bottom: 0;
+}
+div.form-box form div label {
+    color: #fff;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+div.form-box form div input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgb(71, 71, 71);
+    background-color: rgb(49, 49, 49);
+    color: #fff;
+}
+div.form-box form div button {
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(6, 135, 158);
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+}
+div.form-box form div a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+ul.errorlist {
+    margin-top: 0px;
+    list-style: none;
+}
+ul.errorlist li {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+p.error-message {
+    color: rgb(211, 43, 43);
+    margin-bottom: 10px;
+}

@@ -1,0 +1,11 @@
+#top {
+    padding: 100px;
+    background-position: center right;
+    width: 1000px;
+    height: auto;
+    font-style: italic;
+    background-image: url(image-1.jpg);
+}
+section h2 {
+    font-size: 50px;
+}

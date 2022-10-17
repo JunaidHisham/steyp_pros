@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header {
+    height: 100px;
+}
+header section.wrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1.left {}
+header h1.left a {}
+header h1.left a img {
+    height: 80px;
+}
+header div.right {}
+header div.right span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+header div.right a {
+    padding: 15px 30px;
+    border-radius: 6px;
+    background-color: rgb(41, 245, 167);
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Add Students</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			form {
+				width: 90%;
+				margin: 0 auto;
+			}
+			a {
+				margin-right: 40px;
+				margin-top: 40px;
+				display: inline-block;
+				background-color: rgb(83, 233, 150);
+				text-decoration: none;
+				color: #fff;
+				padding: 10px 20px;
+				font-weight: 900;
+			}
+			h3 {
+				font-size: 30px;
+				margin: 20px 0;
+			}
+			hr {
+				margin: 0 auto 20px;
+				width: 95%;
+			}
+			div.input-box {
+				margin-bottom: 20px;
+			}
+			div.input-box input {
+				padding: 10px;
+				font-size: 18px;
+			}
+			div.input-box select {
+				padding: 10px;
+				-webkit-appearance: none;
+				background-color: #fff;
+			}
+			div.input-box label {
+				font-size: 20px;
+			}
+			input.submit {
+				width: 200px;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>Student Form</h3>
+		<hr />
+
+		<form action="" method="post">
+			{% csrf_token %}
+			<div class="input-box">
+				<label for="{{student_form.name.id_for_label}}">{{student_form.name.label}}</label>
+				{{student_form.name}}
+			</div>
+			<div class="input-box">
+				<label for="{{student_form.student_class.id_for_label}}">{{student_form.student_class.label}}</label>
+				{{student_form.student_class}}
+			</div>
+			<div class="input-box">
+				<label for="{{student_form.division.id_for_label}}">{{student_form.division.label}}</label>
+				{{student_form.division}}
+			</div>
+			<div class="input-box">
+				<label for="{{student_form.phone_number.id_for_label}}">{{student_form.phone_number.label}}</label>
+				{{student_form.phone_number}}
+			</div>
+			<div class="input-box">
+				<label for="{{student_form.father_name.id_for_label}}">{{student_form.father_name.label}}</label>
+				{{student_form.father_name}}
+			</div>
+			<div class="input-box">
+				<label for="{{student_form.mother_name.id_for_label}}">{{student_form.mother_name.label}}</label>
+				{{student_form.mother_name}}
+			</div>
+			<input class="submit" type="submit" />
+		</form>
+
+		<a href="/students"> Students List</a>
+		<a href="/"> Go Home</a>
+	</body>
+</html>
+ 

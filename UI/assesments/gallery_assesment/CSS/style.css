@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.container {
+    padding: 50px 0;
+}
+
+#gallery .container ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+#gallery .container ul li {
+    width: 23%;
+    margin-bottom: 20px;
+}
+#gallery .container ul li img {
+    display: block;
+    width: 100%;
+}
+
+@media all and (max-width:980px) {
+    #gallery .container ul li {
+        width: 31%;
+    }
+}
+
+@media all and (max-width:768px) {
+    #gallery .container ul li {
+        width: 48%;
+    }
+}

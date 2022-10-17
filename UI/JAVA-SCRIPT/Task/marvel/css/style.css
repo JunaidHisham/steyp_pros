@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "robotobold", sans-serif;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+@font-face {
+    font-family: "robotobold";
+    src: url("../fonts/roboto-bold-webfont.woff") format("woff2"),
+        url("../fonts/roboto-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "robotoregular";
+    src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"),
+        url("../fonts/roboto-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+body {
+}
+header {
+    height: 80px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+header nav div.logo {
+    width: 30%;
+}
+header nav div.logo div {
+    width: 145px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+header nav div.logo div h1 {
+    font-size: 30px;
+}
+header nav div.logo div.logo-color {
+    color: yellow;
+    transition: all 0.2s;
+}
+header nav div.logo div i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+header nav div.lists {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav div.lists ul.list {
+    display: flex;
+    list-style: none;
+}
+header nav div.lists ul.list li {
+    margin-right: 25px;
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+header nav div.lists ul.list li:last-child {
+    margin: 0;
+}
+header nav div.lists ul.list li a {
+    padding: 10px 15px;
+    font-size: 20px;
+    position: relative;
+    color: #7f7f7f;
+}
+header nav div.lists ul.list li a.hoverin {
+    transform: translateY(-40px);
+    transition: 0.6s ease-in-out;
+}
+header nav div.lists ul.list li a.hoverout {
+    transform: translateY(0);
+    transition: 0.6s ease-in-out;
+}
+header nav div.lists ul.list li:nth-child(1) a:after {
+    content: "About";
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    font-size: 20px;
+    color: yellow;
+}
+header nav div.lists ul.list li:nth-child(2) a:after {
+    content: "Projects";
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    font-size: 20px;
+    color: yellow;
+}
+header nav div.lists ul.list li:nth-child(3) a:after {
+    content: "Resume";
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    font-size: 20px;
+    color: yellow;
+}
+header nav div.lists ul.list li:nth-child(4) a:after {
+    content: "Contact";
+    position: absolute;
+    bottom: -30px;
+    left: 15px;
+    font-size: 20px;
+    color: yellow;
+}
+header nav div.lists ul.color-mode {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+header nav div.lists ul.color-mode li {
+    margin: 5px;
+    font-size: 20px;
+}
+header nav div.lists ul.color-mode li a {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    /* color: #fff; */
+}
+header nav div.lists ul.color-mode li a i {
+    margin-right: 5px;
+}
+header nav div.burger {
+    display: none;
+    cursor: pointer;
+}
+header nav div.burger i {
+    font-size: 30px;
+}
+header nav div.lists.active {
+    right: 0;
+}
+body.dark {
+    background: #000;
+    color: #fff;
+}
+
+#spotlight {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#spotlight div.left {
+    width: 60%;
+    padding: 200px 0;
+}
+#spotlight div.left div.content {
+}
+#spotlight div.left div.content small {
+    display: block;
+    font-size: 22px;
+    color: #5b5b5b;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+#spotlight div.left div.content div.slides {
+    display: flex;
+    margin-bottom: 30px;
+}
+#spotlight div.left div.content div.slides div.static-txt {
+    font-size: 60px;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+#spotlight div.left div.content div.slides ul.dynamic-txts {
+    list-style: none;
+    white-space: nowrap;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+#spotlight div.left div.content div.slides ul.dynamic-txts li {
+    font-size: 60px;
+    color: #f6c046;
+    position: relative;
+    top: 0;
+    transition: all 1s ease;
+    animation: slideUp 5s steps(3) infinite;
+}
+@keyframes slideUp {
+    100% {
+        top: -270px;
+    }
+}
+/* #spotlight div.left div.content div.slides ul.dynamic-txts li span {} */
+#spotlight div.left div.content p {
+    font-size: 22px;
+    line-height: 35px;
+    color: #5b5b5b;
+    margin-bottom: 30px;
+}
+#spotlight div.left div.content div.buttons {
+}
+#spotlight div.left div.content div.buttons a:first-child {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #eee;
+    font-size: 19px;
+    border-radius: 40px;
+    margin-right: 15px;
+}
+#spotlight div.left div.content div.buttons a:last-child {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #474559;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 40px;
+}
+#spotlight div.right {
+    width: 35%;
+    padding: 150px 0;
+}
+#spotlight div.right div.img-container {
+    width: 100%;
+}
+#spotlight div.right div.img-container img {
+    display: block;
+    width: 100%;
+}
+
+#projects {
+    margin-bottom: 150px;
+}
+#projects div.top {
+    text-align: center;
+}
+#projects div.top h1 {
+    font-size: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+#projects div.bottom {
+    position: relative;
+}
+#projects div.bottom i.fas {
+    font-size: 40px;
+    position: absolute;
+}
+#projects div.bottom i.left-arrow {
+    left: -30px;
+    top: 47%;
+    bottom: 50%;
+    /* z-index: 1; */
+}
+#projects div.bottom i.right-arrow {
+    right: -30px;
+    top: 48%;
+    bottom: 50%;
+}
+#projects div.bottom div.slide {
+}
+#projects div.bottom div.slide div.item {
+    width: 100%;
+}
+#projects div.bottom div.slide div.item div.img-container {
+}
+#projects div.bottom div.slide div.item div.img-container img {
+    width: 100%;
+    display: block;
+}
+
+#resume {
+    display: flex;
+    justify-content: space-between;
+    color: #474559;
+}
+#resume div.left,
+#resume div.right {
+    width: 48%;
+}
+#resume div.left h2,
+#resume div.right h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#resume div.left ul,
+#resume div.right ul {
+    list-style: none;
+}
+#resume div.left ul li,
+#resume div.right ul li {
+    margin-bottom: 70px;
+}
+#resume div.left ul li div.item,
+#resume div.right ul li div.item {
+    display: flex;
+}
+#resume div.left ul li div.item div.item-left,
+#resume div.right ul li div.item div.item-left {
+    width: 120px;
+}
+#resume div.left ul li div.item div.item-left span.round,
+#resume div.right ul li div.item div.item-left span.round {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #474559;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    position: relative;
+}
+#resume div.left ul li:nth-child(1) div.item div.item-left span.round:after,
+#resume div.left ul li:nth-child(2) div.item div.item-left span.round:after,
+#resume div.left ul li:nth-child(3) div.item div.item-left span.round:after,
+#resume div.right ul li:nth-child(1) div.item div.item-left span.round:after,
+#resume div.right ul li:nth-child(2) div.item div.item-left span.round:after {
+    content: "";
+    position: absolute;
+    height: 190px;
+    width: 4px;
+    background: #474559;
+    bottom: -190px;
+}
+#resume div.left ul li div.item div.item-right,
+#resume div.right ul li div.item div.item-right {
+    width: calc(100% - 120px);
+}
+#resume div.left ul li div.item div.item-right h2,
+#resume div.right ul li div.item div.item-right h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+header nav div.lists ul.color-mode li a.white,
+#resume div.left ul li div.item div.item-right h2.white,
+#resume div.left h2.white,
+#spotlight div.left div.content p.white,
+#resume div.right h2.white,
+#resume div.right ul li div.item div.item-right h2.white {
+    color: #fff;
+}
+#resume div.left ul li div.item div.item-right h2 span,
+#resume div.right ul li div.item div.item-right h2 span {
+    font-size: 18px;
+    margin-left: 10px;
+}
+#resume div.left ul li div.item div.item-right p,
+#resume div.right ul li div.item div.item-right p {
+    font-size: 18px;
+    font-weight: 400;
+    width: 95%;
+}
+
+#contact_section {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#contact_section div.contact-left {
+    width: 47%;
+}
+#contact_section div.contact-left div.map {
+    width: 100%;
+}
+#contact_section div.contact-left div.map iframe {
+    width: 100%;
+    display: block;
+}
+#contact_section div.contact-left div.map-footer {
+    background: #474559;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#contact_section div.contact-left div.map-footer ul {
+    list-style: none;
+    padding: 30px 70px;
+}
+#contact_section div.contact-left div.map-footer ul li {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#contact_section div.contact-left div.map-footer ul li:last-child {
+    margin-bottom: 0;
+}
+#contact_section div.contact-left div.map-footer ul li h4 {
+    font-size: 36px;
+}
+#contact_section div.contact-left div.map-footer ul li h5 {
+    font-size: 30px;
+}
+#contact_section div.contact-left div.map-footer ul li h6 {
+    font-size: 20px;
+}
+#contact_section div.contact-left div.map-footer ul li div.icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact_section div.contact-left div.map-footer ul li div.icon a {
+    color: #fff;
+    display: block;
+}
+#contact_section div.contact-left div.map-footer ul li div.icon a i {
+    font-size: 25px;
+}
+#contact_section div.contact-right {
+    width: 49%;
+    color: #474559;
+}
+#contact_section div.contact-right form {
+}
+#contact_section div.contact-right form div.form-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#contact_section div.contact-right form div.form-top h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+#contact_section div.contact-right form div.form-top input {
+    width: 47%;
+    margin-bottom: 25px;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #d4d9de;
+    border-radius: 4px;
+    color: #474559;
+}
+#contact_section div.contact-right form div.form-top textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #d4d9de;
+    border-radius: 4px;
+    color: #474559;
+    height: 281px;
+}
+#contact_section div.contact-right form div.form-top textarea:focus,
+#contact_section div.contact-right form div.form-top input:focus {
+    outline: none;
+}
+#contact_section div.contact-right form div.form-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 0 0;
+}
+#contact_section div.contact-right form div.form-bottom input[type="submit"] {
+    padding: 15px 40px;
+    font-size: 18px;
+    color: #fff;
+    background: #f6c246;
+    border: none;
+    border-radius: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+footer div.footer-top {
+}
+footer div.footer-top p,
+footer div.footer-bottom p {
+    margin-bottom: 15px;
+    color: #767676;
+    font-size: 20px;
+    font-weight: 100;
+}
+footer div.footer-bottom p a {
+    color: #3385f6;
+}
+
+@media all and (max-width: 980px) {
+    header nav div.lists {
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        justify-content: flex-end;
+        right: -200px;
+        top: 80px;
+        flex-direction: column-reverse;
+        background: #fff;
+        transition: all 0.1s ease-in-out;
+    }
+    header nav div.lists ul {
+        flex-direction: column;
+    }
+    header nav div.lists ul li {
+        margin: 10px 0;
+    }
+    header nav div.lists ul li a {
+        border-radius: 5px;
+    }
+    header nav div.burger {
+        display: block;
+    }
+    #spotlight div.left {
+        width: 100%;
+        padding: 100px 0 0;
+    }
+    #spotlight div.right {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #spotlight div.left div.content div.slides div.static-txt {
+        font-size: 50px;
+    }
+    #spotlight div.left div.content div.slides ul.dynamic-txts {
+        line-height: 80px;
+    }
+    #spotlight div.left div.content div.slides ul.dynamic-txts li {
+        font-size: 50px;
+        animation: slideUp 5s steps(3) infinite;
+    }
+    @keyframes slideUp {
+        100% {
+            top: -240px;
+        }
+    }
+    #spotlight div.left div.content p {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
